@@ -1,0 +1,17 @@
+buildscript {
+    repositories { mavenCentral() }
+}
+
+
+ext { springBootVersion = '2.0.1.RELEASE' }
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+jar {
+    baseName = 'com.workplacementplatform_poc.contracts'
+}
+sourceCompatibility = 1.8
+
+repositories { mavenCentral() }
+

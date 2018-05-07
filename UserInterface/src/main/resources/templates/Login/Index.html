@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+
+</head>
+<body>
+		<div class="d-flex align-items-center justify-content-center" style="height:100%;">
+			<div class="card">
+			<form action="/Login/Authenticate" method="GET">
+				<div class="card-header"><strong>User Details</strong></div>
+				<div class="card-body">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+				    	<span class="input-group-text">User Name</span>
+					</div>
+					<input type="text" class="form-control" name="userName">
+				</div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+				  		<span class="input-group-text">Password</span>
+					</div>
+					<input type="text" class="form-control" name="password">
+				</div>
+				</div>
+				<div class="card-footer">
+					<button id="Login"  type="submit" class="btn btn-success">Login</button>
+				</div>
+			</form>
+			</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</html>

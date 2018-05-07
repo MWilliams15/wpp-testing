@@ -1,0 +1,3 @@
+rootProject.name = 'AdministrationService'
+include ':Contracts'
+project(':Contracts').projectDir = new File('../../Contracts')
